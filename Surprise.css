@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+
+}
+p{
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000000, #ffffff, #000000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+@keyframes animate{
+    0%{
+        background-position: -600%;
+    }
+    100%{
+        background-position: 600%;
+    }
+}
